@@ -1,18 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import "./App.css";
+import SubNavbar from "./components/SubNavbar";
+import SearchSection from "./components/SearchSection";
+import Categories from "./components/Categories";
+import ChooseUs from "./components/ChooseUs";
+import About from "./components/About";
+import OurBrands from "./components/OurBrands";
+import CustomersSays from "./components/CustomersSays";
+import Footer from "./components/Footer";
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <h1 class="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-    </>
-  )
+    <Router>
+      <div>
+        <Navbar />
+        <SubNavbar />
+        <SearchSection />
+        <Categories />
+        <ChooseUs />
+        <About />
+        {/* <OurBrands /> */}
+        <CustomersSays />
+        <Footer />
+      </div>
+    </Router>
+  );
 }
 
-export default App
+export default App;
