@@ -1,6 +1,6 @@
 const SubNavbar = () => {
   return (
-    <div className="h-12 bg-blue-900 text-white items-center hidden md:flex">
+    <div className="h-12 bg-blue-900 text-white items-center hidden lg:flex relative">
       {/* All Categories */}
       <div className="relative group inline-block">
         {/* Dropdown Button */}
@@ -50,7 +50,7 @@ const SubNavbar = () => {
         </button>
 
         {/* Dropdown Menu */}
-        <div className="absolute left-0 mt-2 w-72 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-50">
+        <div className="absolute left-0 top-full w-72 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-50">
           <button
             onClick={() => handleClick("Option 1")}
             className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100"
@@ -115,7 +115,7 @@ const SubNavbar = () => {
         </button>
 
         {/* Dropdown Menu */}
-        <div className="absolute left-0 mt-2 w-72 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-50">
+        <div className="absolute left-0 top-full w-72 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-50">
           <button
             onClick={() => handleClick("Option 1")}
             className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100"
@@ -162,7 +162,7 @@ const SubNavbar = () => {
         </button>
 
         {/* Dropdown Menu */}
-        <div className="absolute left-0 mt-2 w-72 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-50">
+        <div className="absolute left-0 top-full w-72 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-50">
           <button
             onClick={() => handleClick("Option 1")}
             className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100"
@@ -197,7 +197,7 @@ const SubNavbar = () => {
         </button>
 
         {/* Dropdown Menu */}
-        <div className="absolute left-0 mt-2 w-72 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-50">
+        <div className="absolute left-0 top-full w-72 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-50">
           <button
             onClick={() => handleClick("Option 1")}
             className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100"
@@ -232,7 +232,7 @@ const SubNavbar = () => {
         </button>
 
         {/* Dropdown Menu */}
-        <div className="absolute left-0 mt-2 w-72 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-50">
+        <div className="absolute left-0 top-full w-72 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-50">
           <button
             onClick={() => handleClick("Option 1")}
             className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100"
@@ -291,7 +291,7 @@ const SubNavbar = () => {
         </button>
 
         {/* Dropdown Menu */}
-        <div className="absolute left-0 mt-2 w-72 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-50">
+        <div className="absolute left-0 top-full w-72 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-50">
           <button
             onClick={() => handleClick("Option 1")}
             className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100"
@@ -326,7 +326,7 @@ const SubNavbar = () => {
         </button>
 
         {/* Dropdown Menu */}
-        <div className="absolute left-0 mt-2 w-72 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-50">
+        <div className="absolute left-0 top-full w-72 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-50">
           <button
             onClick={() => handleClick("Option 1")}
             className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100"
