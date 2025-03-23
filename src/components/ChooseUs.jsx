@@ -281,7 +281,7 @@ const ChooseUs = () => {
   ];
 
   return (
-    <div className=" bg-linear-to-t from-sky-500 to-indigo-500 pt-40 pl-10 pb-20">
+    <div className="bg-gradient-to-t from-sky-500 to-indigo-500 pt-40 pl-10 pb-20">
       <h1 className="text-4xl font-bold text-white">Why {type} Choose Us</h1>
       <p className="text-white mt-2">
         We are a team of experienced professionals who are dedicated to
