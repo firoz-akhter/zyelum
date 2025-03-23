@@ -282,21 +282,19 @@ const ChooseUs = () => {
 
   return (
     <div className=" bg-linear-to-t from-sky-500 to-indigo-500 pt-40 pl-10 pb-20">
-      <h1 className="text-5xl font-bold text-white">Why {type} Choose Us</h1>
+      <h1 className="text-4xl font-bold text-white">Why {type} Choose Us</h1>
       <p className="text-white mt-2">
         We are a team of experienced professionals who are dedicated to
         providing the best possible service to our clients.
       </p>
       <div className="mt-5">
         <div className="relative flex bg-[#0D1224] rounded-full p-1 w-[180px]">
-          {/* Toggle Background */}
           <div
             className={`absolute top-0 left-0 w-1/2 h-full bg-gradient-to-r from-green-400 to-blue-500 rounded-full transition-all duration-300 ${
               type === "Supplier" ? "translate-x-full" : ""
             }`}
           ></div>
 
-          {/* Buyer Button */}
           <button
             className={`relative z-10 w-1/2 text-center py-2 text-sm font-medium ${
               type === "Buyer" ? "text-white" : "text-gray-400"
@@ -306,7 +304,6 @@ const ChooseUs = () => {
             Buyer
           </button>
 
-          {/* Supplier Button */}
           <button
             className={`relative z-10 w-1/2 text-center py-2 text-sm font-medium ${
               type === "Supplier" ? "text-white" : "text-gray-400"

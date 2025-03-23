@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center px-5 py-3 bg-gradient-to-r from-teal-400 to-blue-500 text-white h-22">
+    <nav className="flex justify-between items-center px-5 py-3 bg-gradient-to-r from-teal-400 to-blue-500 text-white h-18">
       {/* Left Section: Logo and Tagline */}
       <div className="flex flex-col">
         <svg
@@ -125,8 +125,8 @@ const Navbar = () => {
       </div>
 
       {/* Right Section: Navigation Links */}
-      <div className="flex items-center gap-5 text-lg">
-        <Link className="flex" href="#">
+      <div className="hidden md:flex items-center gap-5 text-sm">
+        <Link className="flex items-center" href="#">
           <span>
             <svg
               viewBox="0 0 24 24"
@@ -141,10 +141,10 @@ const Navbar = () => {
               <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 10h2v7H7zm4-3h2v10h-2zm4 6h2v4h-2z"></path>
             </svg>
           </span>
-          <span className="pl-3">Prices</span>
+          <span className="pl-1">Prices</span>
         </Link>
 
-        <Link className="flex" href="/#">
+        <Link className="flex items-center" href="/#">
           <span>
             <svg
               viewBox="0 0 24 24"
@@ -164,10 +164,10 @@ const Navbar = () => {
               ></path>
             </svg>
           </span>
-          <span className="pl-3">News</span>
+          <span className="pl-1">News</span>
         </Link>
 
-        <Link className="flex" href="#">
+        <Link className="flex items-center" href="#">
           <span>
             <svg
               viewBox="0 0 24 24"
@@ -188,9 +188,9 @@ const Navbar = () => {
               ></path>
             </svg>
           </span>
-          <span className="pl-3">Orders</span>
+          <span className="pl-1">Orders</span>
         </Link>
-        <Link className="flex" href="#">
+        <Link className="flex items-center" href="#">
           <span>
             <svg
               viewBox="0 0 24 24"
@@ -213,6 +213,29 @@ const Navbar = () => {
           <span className="px-3">About Us</span>
         </Link>
 
+        <button className="bg-white cursor-pointer text-blue-500 rounded-md px-4 py-3 flex items-center gap-2 hover:bg-blue-50 transition-colors">
+          <svg
+            viewBox="0 0 24 24"
+            height="20px"
+            width="20px"
+            aria-hidden="true"
+            focusable="false"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+            className="text-blue-500"
+          >
+            <g fill="none">
+              <path d="M0 0h24v24H0V0z"></path>
+              <path d="M0 0h24v24H0V0z" opacity="0.87"></path>
+            </g>
+            <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"></path>
+          </svg>
+          Login Now
+        </button>
+      </div>
+
+      {/* Only show login button on mobile */}
+      <div className="flex md:hidden">
         <button className="bg-white cursor-pointer text-blue-500 rounded-md px-4 py-3 flex items-center gap-2 hover:bg-blue-50 transition-colors">
           <svg
             viewBox="0 0 24 24"

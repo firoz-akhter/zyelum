@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 const Categories = () => {
   return (
-    <div className="flex flex-col justify-center  bg-[#eaf7f4]">
-      <div className="flex justify-around items-center bg-white rounded-xl shadow-md p-8 mx-8 w-auto -mt-16 relative z-10">
+    <div className="flex flex-col justify-center bg-[#eaf7f4]">
+      <div className="hidden md:flex justify-around items-center bg-white rounded-xl shadow-md p-8 mx-8 w-auto -mt-16 relative z-10">
         <div className="flex items-center space-x-4">
           <img
             src="https://d86af0gufpxog.cloudfront.net/unsafe/filters:format(webp)/https%3A%2F%2Fd5nfy7n2jvqm2.cloudfront.net%2Fbuyerfe%2Flanding-page-150224%2Frupee.png"
@@ -53,8 +53,65 @@ const Categories = () => {
         </div>
       </div>
 
+      {/* Mobile marquee */}
+      <div className="md:hidden bg-white rounded-xl shadow-md p-4 mx-4 -mt-16 relative z-10 overflow-hidden">
+        <div className="marquee-container">
+          <div className="marquee-content">
+            <div className="flex items-center space-x-2 mx-4">
+              <img
+                src="https://d86af0gufpxog.cloudfront.net/unsafe/filters:format(webp)/https%3A%2F%2Fd5nfy7n2jvqm2.cloudfront.net%2Fbuyerfe%2Flanding-page-150224%2Frupee.png"
+                alt="Rupee"
+                className="w-6 h-6"
+              />
+              <div>
+                <span className="text-blue-600 font-bold text-sm">400K+</span>
+                <p className="text-gray-500 text-xs">Raw Materials Prices</p>
+              </div>
+            </div>
+
+            <div className="flex items-center space-x-2 mx-4">
+              <img
+                src="https://d86af0gufpxog.cloudfront.net/unsafe/filters:format(webp)/https%3A%2F%2Fd5nfy7n2jvqm2.cloudfront.net%2Fbuyerfe%2Flanding-page-150224%2Fhouse.png"
+                alt="House"
+                className="w-6 h-6"
+              />
+              <div>
+                <span className="text-blue-600 font-bold text-sm">
+                  1 Million+
+                </span>
+                <p className="text-gray-500 text-xs">SMEs Empowered</p>
+              </div>
+            </div>
+
+            <div className="flex items-center space-x-2 mx-4">
+              <img
+                src="https://d86af0gufpxog.cloudfront.net/unsafe/filters:format(webp)/https%3A%2F%2Fd5nfy7n2jvqm2.cloudfront.net%2Fbuyerfe%2Flanding-page-150224%2Ftruck.svg"
+                alt="Truck"
+                className="w-6 h-6"
+              />
+              <div>
+                <span className="text-blue-600 font-bold text-sm">500K+</span>
+                <p className="text-gray-500 text-xs">Orders Delivered</p>
+              </div>
+            </div>
+
+            <div className="flex items-center space-x-2 mx-4">
+              <img
+                src="https://d86af0gufpxog.cloudfront.net/unsafe/filters:format(webp)/https%3A%2F%2Fd5nfy7n2jvqm2.cloudfront.net%2Fbuyerfe%2Flanding-page-150224%2Fglobe.svg"
+                alt="Globe"
+                className="w-6 h-6"
+              />
+              <div>
+                <span className="text-blue-600 font-bold text-sm">30+</span>
+                <p className="text-gray-500 text-xs">Countries Served</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="flex flex-col items-center justify-center">
-        <h1 className="text-5xl font-bold text-left w-full px-8 mt-20 mb-4">
+        <h1 className="text-4xl font-bold text-left w-full px-8 mt-20 mb-4">
           Explore Our Categories
         </h1>
         <p className="text-left w-full px-8 text-xl text-gray-400">
@@ -196,7 +253,7 @@ const Categories = () => {
 
       {/* Our Services section */}
       <div className="flex flex-col items-center justify-center">
-        <h1 className="text-5xl font-bold text-left w-full px-8 mt-20 mb-4">
+        <h1 className="text-4xl font-bold text-left w-full px-8 mt-20 mb-4">
           Our Services
         </h1>
         <p className="text-left w-full px-8 text-xl text-gray-400 mb-5">
@@ -205,10 +262,10 @@ const Categories = () => {
         </p>
       </div>
 
-      <div className="flex justify-around items-center bg-white rounded-xl shadow-md p-8 mx-8 w-auto -mb-16 relative z-10">
-        <div className="flex justify-start gap-8 py-2 w-full">
-          {/* Card 1 */}
-          <div className="flex flex-col items-start w-1/5 text-left">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 px-8 mb-16">
+        {/* Card 1 */}
+        <div className="bg-white p-6 rounded-lg flex flex-col gap-4">
+          <div className="w-12 h-12 flex items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="30"
@@ -252,17 +309,19 @@ const Categories = () => {
                 </linearGradient>
               </defs>
             </svg>
-            <h3 className="text-lg font-semibold mt-4">Buy & Sell With Us</h3>
-            <p className="text-gray-600 mt-2">
-              One stop solution for your raw material sourcing and selling needs
-            </p>
-            <a href="#" className="text-blue-500 mt-auto">
-              Know More →
-            </a>
           </div>
+          <h3 className="text-lg font-semibold">Buy & Sell With Us</h3>
+          <p className="text-gray-600 text-sm">
+            One stop solution for your raw material sourcing and selling needs
+          </p>
+          <a href="#" className="text-blue-500 flex items-center gap-2 mt-auto">
+            Know More <span>→</span>
+          </a>
+        </div>
 
-          {/* Card 2 */}
-          <div className="flex flex-col items-start w-1/5 text-left">
+        {/* Card 2 */}
+        <div className="bg-white p-6 rounded-lg flex flex-col gap-4">
+          <div className="w-12 h-12 flex items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="30"
@@ -311,17 +370,19 @@ const Categories = () => {
                 </linearGradient>
               </defs>
             </svg>
-            <h3 className="text-lg font-semibold mt-4">Raw Materials Prices</h3>
-            <p className="text-gray-600 mt-2">
-              Get live prices for the raw materials you deal in
-            </p>
-            <a href="#" className="text-blue-500 mt-auto">
-              Know More →
-            </a>
           </div>
+          <h3 className="text-lg font-semibold">Raw Materials Prices</h3>
+          <p className="text-gray-600 text-sm">
+            Get live prices for the raw materials you deal in
+          </p>
+          <a href="#" className="text-blue-500 flex items-center gap-2 mt-auto">
+            Know More <span>→</span>
+          </a>
+        </div>
 
-          {/* Card 3 */}
-          <div className="flex flex-col items-start w-1/5 text-left">
+        {/* Card 3 */}
+        <div className="bg-white p-6 rounded-lg flex flex-col gap-4">
+          <div className="w-12 h-12 flex items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="30"
@@ -352,17 +413,19 @@ const Categories = () => {
                 </linearGradient>
               </defs>
             </svg>
-            <h3 className="text-lg font-semibold mt-4">Raw Materials News</h3>
-            <p className="text-gray-600 mt-2">
-              Get daily raw material news & insights live from the ground
-            </p>
-            <a href="#" className="text-blue-500 mt-auto">
-              Know More →
-            </a>
           </div>
+          <h3 className="text-lg font-semibold">Raw Materials News</h3>
+          <p className="text-gray-600 text-sm">
+            Get daily raw material news & insights live from the ground
+          </p>
+          <a href="#" className="text-blue-500 flex items-center gap-2 mt-auto">
+            Know More <span>→</span>
+          </a>
+        </div>
 
-          {/* Card 4 */}
-          <div className="flex flex-col items-start w-1/5 text-left">
+        {/* Card 4 */}
+        <div className="bg-white p-6 rounded-lg flex flex-col gap-4">
+          <div className="w-12 h-12 flex items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="30"
@@ -373,45 +436,29 @@ const Categories = () => {
               <path
                 d="M26.9167 22.1667C26.9167 22.6039 26.5622 22.9583 26.125 22.9583C25.6878 22.9583 25.3333 22.6039 25.3333 22.1667C25.3333 21.7294 25.6878 21.375 26.125 21.375C26.5622 21.375 26.9167 21.7294 26.9167 22.1667Z"
                 fill="#07CDBE"
-                fill-opacity="0.1"
+                fillOpacity="0.1"
               ></path>
               <path
-                d="M33.25 30.0833V14.25C33.25 12.5011 31.8322 11.0833 30.0833 11.0833L7.91667 11.0833C6.16777 11.0833 4.75 9.66557 4.75 7.91667V30.0833C4.75 31.8322 6.16776 33.25 7.91667 33.25H30.0833C31.8322 33.25 33.25 31.8322 33.25 30.0833Z"
-                fill="#07CDBE"
-                fill-opacity="0.1"
-              ></path>
-              <path
-                d="M26.125 22.1667H26.1408M4.75 7.91667V30.0833C4.75 31.8322 6.16776 33.25 7.91667 33.25H30.0833C31.8322 33.25 33.25 31.8322 33.25 30.0833V14.25C33.25 12.5011 31.8322 11.0833 30.0833 11.0833L7.91667 11.0833C6.16777 11.0833 4.75 9.66557 4.75 7.91667ZM4.75 7.91667C4.75 6.16776 6.16777 4.75 7.91667 4.75H26.9167M26.9167 22.1667C26.9167 22.6039 26.5622 22.9583 26.125 22.9583C25.6878 22.9583 25.3333 22.6039 25.3333 22.1667C25.3333 21.7294 25.6878 21.375 26.125 21.375C26.5622 21.375 26.9167 21.7294 26.9167 22.1667Z"
+                d="M4.75 7.91667V30.0833C4.75 31.8322 6.16776 33.25 7.91667 33.25H30.0833C31.8322 33.25 33.25 31.8322 33.25 30.0833V14.25C33.25 12.5011 31.8322 11.0833 30.0833 11.0833L7.91667 11.0833C6.16777 11.0833 4.75 9.66557 4.75 7.91667Z"
                 stroke="url(#paint0_linear_354_372)"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               ></path>
-              <defs>
-                <linearGradient
-                  id="paint0_linear_354_372"
-                  x1="-1.58334"
-                  y1="11.875"
-                  x2="29.9055"
-                  y2="25.8256"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#006EFA"></stop>
-                  <stop offset="1" stop-color="#07CDBE"></stop>
-                </linearGradient>
-              </defs>
             </svg>
-            <h3 className="text-lg font-semibold mt-4">Grow With Credit</h3>
-            <p className="text-gray-600 mt-2">
-              Get access to credit for manufacturers and contractors
-            </p>
-            <a href="#" className="text-blue-500 mt-auto">
-              Know More →
-            </a>
           </div>
+          <h3 className="text-lg font-semibold">Grow With Credit</h3>
+          <p className="text-gray-600 text-sm">
+            Get access to credit for manufacturers and contractors
+          </p>
+          <a href="#" className="text-blue-500 flex items-center gap-2 mt-auto">
+            Know More <span>→</span>
+          </a>
+        </div>
 
-          {/* Card 5 */}
-          <div className="flex flex-col items-start w-1/5 text-left">
+        {/* Card 5 */}
+        <div className="bg-white p-6 rounded-lg flex flex-col gap-4">
+          <div className="w-12 h-12 flex items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="30"
@@ -445,17 +492,15 @@ const Categories = () => {
                 </linearGradient>
               </defs>
             </svg>
-            <h3 className="text-lg font-semibold mt-4">
-              Industry Digital First
-            </h3>
-            <p className="text-gray-600 mt-2">
-              Transparency on your orders, live tracking & more with our app and
-              web
-            </p>
-            <a href="#" className="text-blue-500 mt-auto">
-              Know More →
-            </a>
           </div>
+          <h3 className="text-lg font-semibold">Industry Digital First</h3>
+          <p className="text-gray-600 text-sm">
+            Transparency on your orders, live tracking & more with our app and
+            web
+          </p>
+          <a href="#" className="text-blue-500 flex items-center gap-2 mt-auto">
+            Know More <span>→</span>
+          </a>
         </div>
       </div>
     </div>
