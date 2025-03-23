@@ -1,7 +1,7 @@
 const SearchSection = () => {
   return (
     <div>
-      <div className="flex flex-col items-start h-[400px] md:h-[600px] w-full bg-[url('https://d86af0gufpxog.cloudfront.net/unsafe/adaptive-fit-in/1200x600/filters:format(webp)/https%3A%2F%2Fd5nfy7n2jvqm2.cloudfront.net%2Fbuyerfe%2FlandingImage.png')] bg-cover bg-center bg-no-repeat">
+      <div className="flex flex-col items-start h-[400px] md:h-[600px] w-full bg-[url('https://d86af0gufpxog.cloudfront.net/unsafe/adaptive-fit-in/1200x600/filters:format(webp)/https%3A%2F%2Fd5nfy7n2jvqm2.cloudfront.net%2Fbuyerfe%2FlandingImage.png')] bg-fixed bg-cover bg-center bg-no-repeat">
         <h1 className="text-white text-3xl md:text-5xl w-full md:w-[60%] font-bold text-left pt-12 md:pt-24 px-4 md:mx-10">
           India's Largest B2B Raw Materials Procurement & Credit Platform
         </h1>
